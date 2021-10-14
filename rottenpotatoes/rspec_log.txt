@@ -1,0 +1,33 @@
+
+MoviesController
+  show a movie
+    shows a movie
+  get homepage
+    shows all movies
+    shows filtered movies
+    shows sorted movies
+  show similar movies
+    should call Movie.get_similar_movies
+    should return similar movies if there is director
+    should redirect to home page if director isn't known
+  create a movie
+    creates a movie
+    redirects to movies path
+    flashes success message
+  delete a movie
+    destroys a movie
+
+Movie
+  movie model tests
+    shows all ratings
+    filters movies with rating when ratings is not empty
+    returns all movie when ratings is empty
+    returns similar movies when there is a valid director
+    returns nil when there is no valid director
+
+2 deprecation warnings total
+
+Finished in 0.37307 seconds (files took 1.66 seconds to load)
+16 examples, 0 failures
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 74 / 80 LOC (92.5%) covered.
